@@ -1,0 +1,13 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: 'Chalkboard SE';
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+@font-face {
+  font-family: "Chalkboard SE";
+  src: url("./assets/fonts/2157-font.otf");
+}
