@@ -6,7 +6,7 @@ import { WalletModal } from '../component/WalletModal';
 import { EthereumProvider } from "@walletconnect/ethereum-provider";
 import { toast } from 'react-toastify';
 import { ethers } from 'ethers';
-import { contractAddress, abi } from "./Rangerverse.json";
+// import { contractAddress, abi } from "./Rangerverse.json";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
@@ -19,7 +19,7 @@ export const MintPage = () => {
     const [address, setAddress] = useState<string>();
     const [wlAddress, setWLAddress] = useState<string>();
     const [fcfsAddress, setFCFSAddress] = useState<string>();
-    const [signature, setSignature] = useState("");
+    // const [signature, setSignature] = useState("");
     const [showModal, setShowModal] = useState(false);
     
     const [web3Provider, setWeb3Provider] = useState<WalletConnectProvider>()
@@ -174,7 +174,8 @@ export const MintPage = () => {
         const signer = await provider.getSigner();
         setAddress(signer.address);
         const signature = await signer.signMessage(message);
-        setSignature(signature);
+        console.log(signature);
+        // setSignature(signature);
     };
 
     const mintNFT = async () => {
@@ -196,7 +197,8 @@ export const MintPage = () => {
         const provider = ethers.getDefaultProvider("mainnet");
         const contract =  new ethers.Contract(koiAddress, koiAbi, provider);
         const name  = await contract.symbol();
-        console.log(name);
+        console.log(fcfsAddress, name, wlAddress);
+        
     }
 
     useEffect(() => {
