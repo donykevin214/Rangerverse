@@ -1,10 +1,17 @@
 import OpportunityImg from '../assets/RANGER-03.gif';
-import AlphaImg from  '../assets/RANGER-04.gif';
-import FutureImg from '../assets/RANGER-05.gif';
+import AlphaImg from  '../assets/mission_3.gif';
+import FutureImg from '../assets/mission_2.gif';
 export const Mission = () => {
     return (
         <div id='mission'>
             <button className="bg-[#00a2d6] text-[15px] py-2 px-5 rounded-md mt-[2rem] ">MISSIONS</button>
+            <div className='border p-8 w-11/12 lg:w-[30rem] mx-auto mt-4 rounded-md'>
+                <div className='flex justify-between items-center mb-2'>
+                    <p>RANGERS LAUNCH</p>
+                    <p>0%</p>
+                </div>
+                <p className="h-[8px] w-full rounded-md bg-[#063E50]"></p>
+            </div>
             <div className='flex justify-center items-center my-10'>
                 <p className="h-[3px] w-[15rem] lg:w-[30rem] bg-[#063E50]"></p>
             </div>
@@ -43,9 +50,7 @@ export const Mission = () => {
                     <img src={FutureImg} width={360} height={360} className='w-[360px] h-[360px]'/>
                 </div>
             </div>
-            <div className='flex justify-center items-center my-10'>
-                <p className="h-[3px] w-[15rem] lg:w-[30rem] bg-[#063E50]"></p>
-            </div>
+            
         </div>
     )
 }

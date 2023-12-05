@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "../rangerverse_mint/src/layout/index.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

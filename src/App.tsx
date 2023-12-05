@@ -1,8 +1,10 @@
 import './App.css'
 import Home from './Home';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { MintPage } from './page';
+import { MintPage } from '../../rangerverse_mint/src/layout';
 import 'react-toastify/dist/ReactToastify.css';
+
+
 import { ToastContainer } from 'react-toastify';
 function App() {
     

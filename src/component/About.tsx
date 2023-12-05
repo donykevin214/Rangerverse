@@ -1,5 +1,5 @@
 import AboutImg from '../assets/about.png';
-import CommunityImg from  '../assets/image.gif';
+import CommunityImg from  '../assets/mission_1.gif';
 import RoadmapImg from '../assets/RANGER-02.gif';
 export const About = () => {
     return (

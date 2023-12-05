@@ -25,10 +25,10 @@ export const Header = () => {
                             <a href='#mission'>Missions</a>
                         </li>
                         <li>
-                            <a href='#information'>NFTs</a>
+                            <a href='#gallery'>Gallery</a>
                         </li>
                         <li>
-                            <a href='/mint'>Mint NFT</a>
+                            <a href='https://mint.rangerverse.io'>Mint NFT</a>
                         </li>
                     </ul>
                     <div className='flex lg:hidden'>
@@ -51,16 +51,16 @@ export const Header = () => {
                                         <a href='#mint' onClick={toggleMenu}>Home</a>
                                     </li>
                                     <li>
-                                        <a href='#mint' onClick={toggleMenu}>Mint NFT</a>
-                                    </li>
-                                    <li>
                                         <a href='#about' onClick={toggleMenu}>About</a>
                                     </li>
                                     <li>
                                         <a href='#mission' onClick={toggleMenu}>Missions</a>
                                     </li>
                                     <li>
-                                        <a href='#information' onClick={toggleMenu}>NFTs</a>
+                                        <a href='#gallery' onClick={toggleMenu}>Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href='https://mint.rangerverse.io' onClick={toggleMenu}>Mint NFT</a>
                                     </li>
                                 </ul>
                             </motion.div>
